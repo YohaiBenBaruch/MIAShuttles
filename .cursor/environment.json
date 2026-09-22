@@ -1,0 +1,10 @@
+{
+  "name": "Mia Shuttles",
+  "terminals": [
+    {
+      "name": "dev",
+      "command": "python3 -m http.server 5173"
+    }
+  ],
+  "ports": [5173]
+}
