@@ -85,6 +85,11 @@
     .nav-phone-text { display: none; }
     .footer-row { flex-direction: column; align-items: flex-start !important; gap: 18px !important; }
   }
+
+  .legal-details { margin: 18px auto 0; max-width: 1200px; color: #A8B9C9; font-size: 13px; line-height: 1.65; }
+  .legal-details summary { cursor: pointer; color: #CFE2F7; font-weight: 600; width: fit-content; }
+  .legal-details summary:focus-visible { outline: 3px solid #FFB443; outline-offset: 3px; }
+  .legal-details p { margin: 10px 0 0; }
 </style>
 </head>
 <body dir="rtl">
@@ -322,10 +327,18 @@
           <a href="https://wa.me/972536632777" style="color: #CFE2F7; font-size: 14.5px; font-weight: 600;">WhatsApp</a>
           <div style="color: #A8B9C9; font-size: 14px;">שירות בכל הארץ</div>
         </div>
-        <p style="margin: 0; color: #A8B9C9; font-size: 13px; line-height: 1.55; max-width: 460px;">האתר פועל בהתאם לדרישות הנגישות. לפניות בנושא נגישות צרו קשר בטלפון <a href="tel:0536632777" style="color: #CFE2F7; font-weight: 600; text-decoration: underline;">053-6632777</a></p>
+        <p style="margin: 0; color: #A8B9C9; font-size: 13px; line-height: 1.55; max-width: 560px;">האתר פועל בהתאם לדרישות הנגישות. לפניות בנושא נגישות צרו קשר בטלפון <a href="tel:0536632777" style="color: #CFE2F7; font-weight: 600; text-decoration: underline;">053-6632777</a> · <a href="#privacy" style="color: #CFE2F7; font-weight: 600; text-decoration: underline;">מדיניות פרטיות</a></p>
+        <p style="margin: 0; color: #A8B9C9; font-size: 13px; line-height: 1.55;">עוסק פטור/מורשה מס' [XXXXXXXX]</p>
       </div>
       <div style="color: #A8B9C9; font-size: 13px;">© 2026 מיה הסעות. כל הזכויות שמורות.</div>
     </div>
+    <details id="privacy" class="legal-details">
+      <summary>מדיניות פרטיות</summary>
+      <p>אתר זה אינו אוסף ואינו שומר מידע אישי באמצעות טפסים. אין באתר טופסי יצירת קשר או הזנה של פרטים.</p>
+      <p>לחיצה על כפתורי הטלפון או הוואטסאפ פותחת שיחה ישירות במכשיר של המבקר מול הטלפון או הוואטסאפ של העסק. מספר הטלפון או השם אינם נשלחים דרך שרת צד שלישי של האתר.</p>
+      <p>ספק האחסון (Vercel) עשוי לשמור יומני גישה אוטומטיים של השרת לצורכי אבטחה וביצועים בלבד.</p>
+      <p>לשאלות בנושא פרטיות ניתן לפנות ל־[שם העסק/בעל השליטה] בטלפון <a href="tel:0536632777" style="color: #CFE2F7; font-weight: 600; text-decoration: underline;">053-6632777</a>.</p>
+    </details>
   </div>
   </div>
 </div>
