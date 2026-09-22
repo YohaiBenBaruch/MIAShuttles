@@ -8,14 +8,14 @@ Static landing page for מיה הסעות (Mia Shuttles), a private transportati
 
 ## Local development
 
-No build step is required. To preview the site locally with a static server:
+No build step and no dependencies are required. Serve the folder with any static
+file server. For example, using Python (preinstalled on most systems):
 
 ```bash
-npm install     # installs http-server (dev-only)
-npm run dev     # serves the site at http://localhost:5173
+python3 -m http.server 5173   # then open http://localhost:5173
 ```
 
-Alternatively, with no dependencies at all: `python3 -m http.server 5173`.
+Any other static server works too (e.g. `npx serve`, `npx http-server`).
 
 ## Deploy
 
