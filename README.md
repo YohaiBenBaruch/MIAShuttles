@@ -1,16 +1,31 @@
 # Mia Shuttles - Landing Page
 
-Static landing page for מיה הסעות (Mia Shuttles), a private transportation service in Israel.
+Next.js landing page for מיה הסעות (Mia Shuttles), a private transportation service in Israel.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:3000
 
 ## Structure
-- `index.html` - the full page (self-contained HTML/CSS, no build step required)
-- `assets/hero.webp` - compressed hero background image
-- `sitemap.xml` / `robots.txt` - basic SEO files
+- `app/page.tsx` - the landing page
+- `app/globals.css` - page styles
+- `public/assets/hero.webp` - hero background image
+- `public/sitemap.xml` / `public/robots.txt` - SEO files
 
 ## Deploy
-This is a plain static site - drag-and-drop `index.html` + `assets/` (plus `sitemap.xml` and `robots.txt`) into Netlify, Vercel, or Cloudflare Pages, or connect this repo directly for automatic deploys on every push.
+Deploy on Vercel, or any host that supports Next.js. Production:
+
+```bash
+npm run build
+npm start
+```
 
 ## Before going live
 - Update contact details (phone: 053-6632777, WhatsApp link) if they change.
 - Connect a custom domain (e.g. miashuttles.co.il) and confirm SSL is active.
-- If the live domain is not `miashuttles.co.il`, update the URLs in `sitemap.xml` and `robots.txt`.
+- If the live domain is not `miashuttles.co.il`, update the URLs in `public/sitemap.xml` and `public/robots.txt`.
