@@ -53,7 +53,7 @@ export function SiteFooter() {
       <div className="footer-bottom">
         <div className="wrap footer-bottom-row">
           <span>© 2026 מיה הסעות. כל הזכויות שמורות.</span>
-          <span>עוסק פטור/מורשה מס׳ [XXXXXXXX]</span>
+          <span>הודיה הסעות בע״מ, ח.פ. 517029682</span>
         </div>
       </div>
     </footer>

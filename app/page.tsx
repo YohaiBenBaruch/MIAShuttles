@@ -198,6 +198,7 @@ export default function HomePage() {
               <path fill="#e4570e" d="M68 20.5s6.2-7 6.2-12.2a6.2 6.2 0 1 0-12.4 0c0 5.2 6.2 12.2 6.2 12.2z" />
               <circle cx="68" cy="8.4" r="2.2" fill="#ffffff" />
             </svg>
+            <p className="hero-badge">מוניות 6-8 נוסעים</p>
             <p className="kicker">הסעות פרטיות בכל הארץ</p>
             <h1 className="hero-title">
               נוסעים בנוחות.
