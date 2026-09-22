@@ -52,7 +52,7 @@ export function ServicesCarousel({ children }: { children: ReactNode }) {
     <div className="services-carousel">
       <div className="cards" ref={scrollerRef}>
         {Children.map(children, (child, i) =>
-          isValidElement(child) ? cloneElement(child, { id: items[i]?.id }) : child,
+          isValidElement<{ id?: string }>(child) ? cloneElement(child, { id: items[i]?.id }) : child,
         )}
       </div>
       <div className="carousel-dots">
