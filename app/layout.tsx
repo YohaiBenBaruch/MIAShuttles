@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="he" dir="rtl" className={rubik.variable}>
-      <body dir="rtl">{children}</body>
+      <body dir="rtl">{/* deploy sync */}{children}</body>
     </html>
   );
 }
