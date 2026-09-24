@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const rubik = Rubik({
@@ -23,7 +24,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="he" dir="rtl" className={rubik.variable}>
-      <body dir="rtl">{/* deploy sync */}{children}</body>
+      <body dir="rtl">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18470605766"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18470605766');
+          `}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }
