@@ -61,7 +61,7 @@ export function ServicesCarousel({ children }: { children: ReactNode }) {
             key={item.id}
             href={`#${item.id}`}
             className={i === active ? "is-active" : undefined}
-            aria-label={item.label}
+            aria-label={`עבור לשירות ${item.label}`}
             aria-current={i === active ? "true" : undefined}
             onClick={(event) => {
               event.preventDefault();

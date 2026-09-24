@@ -11,8 +11,8 @@ export function SiteFooter() {
     <footer className="footer">
       <div className="wrap footer-grid">
         <div className="footer-brand">
-          <a href="/">
-            <img className="site-logo" src="/assets/mialogo.png" alt="מיה הסעות" />
+          <a href="/" aria-label="מיה הסעות, לעמוד הבית">
+            <img className="site-logo" src="/assets/mialogo.png" alt="" />
           </a>
           <p>הסעות פרטיות לכל יעד. נוסעים איתנו בכל דרך.</p>
         </div>
@@ -30,10 +30,10 @@ export function SiteFooter() {
           <h2>יצירת קשר</h2>
           <ul>
             <li>
-              <a href="tel:0536632777">053-6632777</a>
+              <a href="tel:0536632777" aria-label="התקשרו עכשיו 053-6632777">053-6632777</a>
             </li>
             <li>
-              <a href="https://wa.me/972536632777">וואטסאפ</a>
+              <a href="https://wa.me/972536632777" aria-label="שלחו הודעת WhatsApp למיה הסעות">וואטסאפ</a>
             </li>
             <li>שירות בכל הארץ, 24/7</li>
           </ul>

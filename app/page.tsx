@@ -190,7 +190,8 @@ export default function HomePage() {
       <a className="skip-link" href="#main-content">דלג לתוכן הראשי</a>
       <SiteNav />
 
-      <section className="hero" id="main-content">
+      <main id="main-content" tabIndex={-1}>
+      <section className="hero">
         <div className="hero-copy">
           <div className="hero-copy-inner">
             <svg className="hero-scene" viewBox="0 0 86 48" fill="none" aria-hidden="true">
@@ -208,8 +209,8 @@ export default function HomePage() {
             <p className="lede">הסעות פרטיות לכל יעד - שדה תעופה, אירועים, עובדים ונסיעות.</p>
             <p className="hero-line">להגיע בזמן, להגיע בטוח. זה מיה הסעות.</p>
             <div className="hero-cta-row">
-              <a className="btn btn-orange" href="tel:0536632777"><PhoneIcon />התקשרו עכשיו</a>
-              <a className="btn btn-blue" href="https://wa.me/972536632777"><WhatsAppIcon />וואטסאפ</a>
+              <a className="btn btn-orange" href="tel:0536632777" aria-label="התקשרו עכשיו 053-6632777"><PhoneIcon />התקשרו עכשיו</a>
+              <a className="btn btn-blue" href="https://wa.me/972536632777" aria-label="שלחו הודעת WhatsApp למיה הסעות"><WhatsAppIcon />וואטסאפ</a>
             </div>
           </div>
         </div>
@@ -470,18 +471,19 @@ export default function HomePage() {
           <div className="contact-aside">
             <div className="contact-call">
               <p className="contact-card-title">התקשרו אלינו</p>
-              <a className="contact-phone" href="tel:0536632777">
+              <a className="contact-phone" href="tel:0536632777" aria-label="התקשרו עכשיו 053-6632777">
                 <span className="contact-number" dir="ltr">053-6632777</span>
               </a>
             </div>
             <div className="contact-actions">
-              <a className="btn btn-orange" href="tel:0536632777"><PhoneIcon />התקשרו עכשיו</a>
-              <a className="btn btn-line" href="https://wa.me/972536632777"><WhatsAppIcon />וואטסאפ</a>
+              <a className="btn btn-orange" href="tel:0536632777" aria-label="התקשרו עכשיו 053-6632777"><PhoneIcon />התקשרו עכשיו</a>
+              <a className="btn btn-line" href="https://wa.me/972536632777" aria-label="שלחו הודעת WhatsApp למיה הסעות"><WhatsAppIcon />וואטסאפ</a>
             </div>
           </div>
         </div>
       </section>
 
+      </main>
       <SiteFooter />
     </>
   );
